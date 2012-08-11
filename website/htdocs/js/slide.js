@@ -3,7 +3,7 @@ $(function(){
 
 	box.find(".torightside").on("click", function(){
 		$(this).parents(".slidetext").stop().animate({
-			marginLeft: -940
+			marginLeft: -946
 		}, "fast");
 	});
 	box.find(".toleftside").on("click", function(){

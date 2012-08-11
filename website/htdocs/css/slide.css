@@ -1,6 +1,7 @@
 article .slidebox{
 	width:946px;
 	overflow:hidden;
+	clear:both;
 }
 
 article .slidetext{
