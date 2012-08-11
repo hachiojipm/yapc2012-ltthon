@@ -1,6 +1,7 @@
 *{
 	margin: 0;
 	padding: 0;
+	font-family:sans-selif;
 }
 
 ul{
@@ -57,6 +58,7 @@ header #yapclogo{
 article{
 	width:946px;
 	margin:0 auto;
+	padding-bottom:440px;
 }
 
 article h1{
@@ -93,7 +95,11 @@ article p{
 
 footer{
 	margin-top:100px;
+	width:100%;
 	background: url("../images/header_line_bg.jpg") repeat center top;
+	position:fixed;
+	bottom:0;
+	z-index:100;
 }
 
 footer #pop{
@@ -112,3 +118,8 @@ footer p{
 	text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
 }
 
+
+.slideshare{
+	width:640px;
+	margin:40px auto 0;
+}
