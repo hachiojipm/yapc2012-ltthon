@@ -1,0 +1,35 @@
+article .slidebox{
+	width:946px;
+	overflow:hidden;
+}
+
+article .slidetext{
+	width:1892px;
+}
+
+article .slidetext section.leftside{
+	width:946px;
+	float:left;
+}
+
+article p.torightside{
+	font-size: 1.2em;
+	text-align:right;
+	text-decoration: underline;
+	color:#dd4400;
+	cursor:pointer;
+}
+
+article .slidetext section.rightside{
+	width:946px;
+	float:right;
+}
+
+article p.toleftside{
+	font-size: 1.2em;
+	text-decoration: underline;
+	color:#dd4400;
+	cursor:pointer;
+}
+
+

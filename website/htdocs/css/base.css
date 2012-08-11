@@ -1,0 +1,114 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul{
+	list-style:none;
+}
+
+a{
+	text-decoration:none;
+}
+
+body{
+	font-size:62.5%;
+	background: url("../images/bg.jpg") repeat center top;
+}
+
+header{
+	background: url("../images/header_line_bg.jpg") repeat center top;
+	height:50px;
+}
+
+header nav{
+	font-size:1.6em;
+}
+
+header nav ul{
+}
+
+header nav ul li{
+	float:left;
+	margin-left:1em;
+	padding-top:13px;
+}
+
+header nav ul li a{
+	color:#fff;
+	font-weight:bold;
+	text-shadow: 3px 3px 3px rgba(0, 0, 0, .2);
+}
+
+header nav ul li a:hover{
+	border-bottom:2px solid #fff;
+}
+
+header nav ul li a.current{
+	border-bottom:2px solid #fff;
+}
+
+header #yapclogo{
+	float:right;
+	padding-top:5px;
+	padding-right:5px;
+}
+
+article{
+	width:946px;
+	margin:0 auto;
+}
+
+article h1{
+	margin-top:50px;
+	float:left;
+	margin-bottom:50px;
+}
+
+article #sublogo{
+	margin-top:50px;
+	float:right;
+}
+
+article h2{
+	clear:both;
+	background: url("../images/h2.png") no-repeat top left;
+	width:846px;
+	height:62px;
+	font-size:2.4em;
+	padding: 36px 0 0 100px;
+	margin-top:50px;
+}
+
+article .text{
+	margin-top:20px;
+}
+
+article p{
+	padding:5px 20px;
+	font-size:1.4em;
+	line-height:1.6;
+	text-indent:1em
+}
+
+footer{
+	margin-top:100px;
+	background: url("../images/header_line_bg.jpg") repeat center top;
+}
+
+footer #pop{
+	background-color: #1E2E53;
+	text-align:center;
+
+}
+
+footer p{
+	height:20px;
+	padding:5px 10px;
+	text-align:right;
+	font-size:1.4em;
+	color:#fff;
+	font-weight: bold;
+	text-shadow: 2px 2px 4px rgba(0, 0, 0, .2);
+}
+
