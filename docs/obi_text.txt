@@ -13,7 +13,10 @@ neko_gata_s from Niigata.pm
 https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-ash4/616848_10151201518893064_37935770_o.jpg?dl=1
 「「本物のLT<リアル>がここにある」ストリート生まれの Yet Another Lightning Talk。そこであなたはマスに媚びない Perl Mongers たちのハーコーなリアルを目撃する"」
 
-
+ytnobody - Perl Beginners 主宰
+https://www.facebook.com/photo.php?fbid=2510734542105
+自分が知らないことをネタにしたっていいと思う。いっその事、質問する勢いで登壇するのもアリでしょ？
+せっかくYAPCに参加するのだから、ついでに自分らしくLTするといいんじゃないですか。
 
 
 
