@@ -1,0 +1,19 @@
+article p.rlink{
+	font-size: 1.2em;
+	text-align:right;
+}
+
+article p.rlink a{
+	color:#dd4400;
+	text-decoration: underline;
+}
+
+article p.llink{
+	font-size: 1.2em;
+	text-align:left;
+}
+
+article p.llink a{
+	color:#dd4400;
+	text-decoration: underline;
+}
