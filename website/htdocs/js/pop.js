@@ -1,25 +1,35 @@
 $(function(){
 	var pop = $("#pop");
-	var popbgc = [ "#1E2E53", "#66B742"];
+	var popbgc = [ "#1E2E53", "#66B542", "#4A3C1B", "#C87E00"];
+
 	if(pop && pop.length > 0){
-		var rand = (Math.random()*2 << 0) + 1;
-		console.log(rand);
+		var rand = (Math.random() * popbgc.length) << 0;
 		pop.html( $("<img>").attr("src", "./images/bookpop" + rand + ".png"));
-		pop.css({ backgroundColor: popbgc[rand-1]});
+		pop.css({ backgroundColor: popbgc[rand]});
 
 		var footer = $("footer");
 		if(footer && footer.length > 0){
-			footer.prepend('<div id="popclose">▼CLOSE</div>');
-			var toggle = footer.find("#popclose");
-			toggle.css({ backgroundColor: popbgc[rand-1]});
+			var popclose = $("<div>", {id: "popclose"});
+			footer.prepend(popclose);
+
+			if(common.getCookie("bookpop") == "0"){
+				pop.css({display: "none"});
+				popclose.text("▲OPEN");
+			}else{
+				popclose.text("▼CLOSE");
+			}
+
+			popclose.css({ backgroundColor: popbgc[rand]});
 			footer.on("click", function(){
 				var popdisplay = pop.css("display");
 				if(popdisplay === "none"){
 					$("article").animate({ paddingBottom: 350});
+					common.setCookie("bookpop", 1);
 				}else{
 					$("article").animate({ paddingBottom: 100});
+					common.setCookie("bookpop", 0);
 				}
-				pop.stop().slideToggle("normal", changeBtnText.bind(pop, toggle));
+				pop.stop().slideToggle("normal", changeBtnText.bind(pop, popclose));
 			});
 		}
 	}

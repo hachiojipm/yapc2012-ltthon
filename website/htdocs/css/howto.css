@@ -17,3 +17,33 @@ article p.llink a{
 	color:#dd4400;
 	text-decoration: underline;
 }
+
+article li{
+	font-size:1.6em;
+	margin-left:40px;
+}
+article li li{
+	font-size:0.9em;
+	margin-left:20px;
+}
+
+article ul{
+	margin-top:15px;
+	list-style-type: square
+}
+article ul ul{
+	margin-top:5px;
+	margin-bottom:5px;
+	list-style-type: disc
+}
+article h3{
+	margin-top:20px;
+	font-size:1.8em;
+}
+article h4{
+	margin-top:5px;
+	margin-left:20px;
+	font-size:1.4em;
+	font-weight:bold;
+}
+

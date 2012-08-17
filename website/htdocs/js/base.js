@@ -1,9 +1,16 @@
-if(!("console" in window && "time" in window.console)){
-	window.console = {};
-	window.console.log = function(str){}
-	window.console.info = function(str){}
-	window.console.debug = function(str){}
-}
+(function(){
+	if(!"console" in window){
+		window.console = {};
+	}
+	var cnsl = [ "assert", "clear", "count", "debug", "dir", "dirxml", "error", "exception", "group", "groupCollapsed", "groupEnd", "info", "log", "profile", "profileEnd", "table", "time", "timeEnd", "timeStamp", "trace", "warn"];
+	var len = cnsl.length;
+	for(var i = 0; i < cnsl.len; i++){
+		var e = cnsl[i];
+		if(!e in window.console){
+			window.console[e] = function(){};
+		}
+	}
+})();
 
 var at = {};
 at.version = 1.1;
@@ -35,11 +42,26 @@ at.anchortrace = function(){
 
 		console.debug("_trackEvent", pathname, "#" + at.parentid(this), href);
 
-		//var _gaq = _gaq || [];
 		_gaq.push(["_trackEvent", pathname, "#" + at.parentid(this), href ]);
 	});
 }
 
+var common = {
+	getCookie: function(key){
+		var cookies = document.cookie;
+		var cookiesarray = cookies.split(";");
+		var len = cookiesarray.length;
+		var reg = new RegExp("^\\s*" + key + "=");
+		for(var i = 0; i < len; i++){
+			if(reg.test(cookiesarray[i])){
+				return unescape(cookiesarray[i].split("=")[1]);
+			}
+		}
+	},
+	setCookie: function(key, value){
+		document.cookie = key + "=" + escape(value);
+	}
+}
 
 $(function(){
 	console.log("Anchor Tracer : " + at.version);
