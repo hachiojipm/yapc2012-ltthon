@@ -1,6 +1,6 @@
 $(function(){
 	var pop = $("#pop");
-	var popbgc = [ "#1E2E53", "#66B542", "#4A3C1B", "#C87E00"];
+	var popbgc = [ "#1E2E53", "#66B542", "#4A3C1B", "#C27E00", "#6380CB", "#5C8963", "#CC145A", "#4D4D4D"];
 
 	if(pop && pop.length > 0){
 		var rand = (Math.random() * popbgc.length) << 0;
