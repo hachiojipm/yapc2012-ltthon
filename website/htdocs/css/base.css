@@ -18,6 +18,10 @@ body{
 	overflow-y: scroll;
 }
 
+img{
+	border:none;
+}
+
 header{
 	background: url("../images/header_line_bg.jpg") repeat center top;
 	height:50px;

@@ -1,12 +1,12 @@
 (function(){
-	if(!"console" in window){
+	if(! ("console" in window)){
 		window.console = {};
 	}
 	var cnsl = [ "assert", "clear", "count", "debug", "dir", "dirxml", "error", "exception", "group", "groupCollapsed", "groupEnd", "info", "log", "profile", "profileEnd", "table", "time", "timeEnd", "timeStamp", "trace", "warn"];
 	var len = cnsl.length;
-	for(var i = 0; i < cnsl.len; i++){
+	for(var i = 0; i < len; i++){
 		var e = cnsl[i];
-		if(!e in window.console){
+		if(! (e in window.console)){
 			window.console[e] = function(){};
 		}
 	}
