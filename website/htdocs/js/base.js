@@ -22,7 +22,7 @@
 			}
 
 			return function(){
-				func.apply(t, newargary);
+				return func.apply(t, newargary);
 			}
 		}
 	}
