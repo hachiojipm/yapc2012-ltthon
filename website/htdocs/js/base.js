@@ -10,6 +10,22 @@
 			window.console[e] = function(){};
 		}
 	}
+
+	if(!Function.prototype.hasOwnProperty("bind")){
+		Function.prototype.bind = function(){
+			var func = this;
+			var t = arguments[0];
+			var len = arguments.length;
+			var newargary = [];
+			for(var i = 1; i < len; i++){
+				newargary.push(arguments[i]);
+			}
+
+			return function(){
+				func.apply(t, newargary);
+			}
+		}
+	}
 })();
 
 var at = {};

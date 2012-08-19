@@ -21,7 +21,10 @@ $(function(){
 			$("article").animate({ paddingBottom: 100});
 			common.setCookie("bookpop", 0);
 		}
-		pop.stop().delay(delay).slideToggle("normal", changeBtnText.bind(pop, popclose));
+		var popclose = $("#popclose");
+		if(popclose.length > 0){
+			pop.stop().delay(delay).slideToggle("normal", changeBtnText.bind(pop, popclose));
+		}
 	};
 
 	if(pop && pop.length > 0){
@@ -42,7 +45,9 @@ $(function(){
 
 			footer.on("click", togglePopView);
 
-			if(common.getCookie("bookpop") !== "0"){
+			var bookpopflag = common.getCookie("bookpop") || 1;
+
+			if(bookpopflag !== "0"){
 				togglePopView({delay: 1000});
 			}
 		}
