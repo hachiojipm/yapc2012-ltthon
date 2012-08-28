@@ -125,6 +125,18 @@ footer #pop{
 	line-height:0;
 }
 
+footer #pop .wrappopimg{
+	width:940px;
+	margin:0 auto;
+	position: relative;
+}
+
+footer #pop .wrappopimg .poplink{
+	position:absolute;
+}
+
+
+
 footer p{
 	height:20px;
 	background: url("../images/header_line_bg.jpg") repeat center top;
@@ -144,4 +156,9 @@ footer p{
 
 .likebuttons{
 	text-align:right;
+	margin-top:2em;
+}
+
+.clear{
+	clear:both;
 }

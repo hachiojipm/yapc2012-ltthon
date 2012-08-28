@@ -76,7 +76,10 @@ var common = {
 	},
 	setCookie: function(key, value){
 		document.cookie = key + "=" + escape(value);
-	}
+	},
+	w: window,
+	d: window.document
+
 }
 
 $(function(){

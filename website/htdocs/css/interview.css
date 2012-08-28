@@ -1,0 +1,46 @@
+section{
+	clear:both;
+
+}
+
+article p{
+	text-indent:0;
+	padding-left:0;
+}
+
+article p.note{
+	font-size:1.0em;
+	text-align:right;
+	padding:0;
+}
+
+.interviewer{
+	font-weight:bold;
+}
+
+.moznion{
+	margin-bottom:2em;
+}
+
+.photoright{
+	float:right;
+	margin-left:3ex;
+}
+
+.photoleft{
+	float:left;
+	margin-right:3ex;
+}
+
+.textwithrightphoto{
+	width:626px;
+	/width:590px;
+}
+
+.textwithleftphoto{
+	width:626px;
+	/width:590px;
+	margin-left:320px;
+	padding-left:3ex;
+}
+
