@@ -1,0 +1,19 @@
+#embedform{
+	width:800px;
+	margin:20px auto;
+}
+
+#embedform .frametop{
+	background: url("../images/register_frame_top.png") no-repeat top center;
+	height:20px;
+}
+
+#embedform .frameloop{
+	background: url("../images/register_frame_loop.png") repeat-y top center;
+}
+
+#embedform .framebottom{
+	background: url("../images/register_frame_bottom.png") no-repeat top center;
+	height:60px;
+}
+
