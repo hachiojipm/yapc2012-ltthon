@@ -60,6 +60,12 @@ header #yapclogo{
 	padding-right:5px;
 }
 
+div#messagebanner{
+	width:688px;
+	height:112px;
+	margin:10px auto;
+}
+
 article{
 	width:946px;
 	margin:0 auto;
