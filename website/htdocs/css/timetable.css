@@ -1,0 +1,107 @@
+#timetabledate{
+	background: url("../images/header_line_bg.jpg") no-repeat top left;
+	width:946px;
+	height:44px;
+	border-radius: 6px;
+	color:#1B3235;
+	margin-bottom:1px;
+}
+
+#timetabledate h3{
+	padding:7px 0 0 16px;
+	font-size:2.4em;
+	font-family: "Cabin", sans-serif;
+	font-weight:bold;
+	font-style: oblique;
+	float:left;
+}
+
+#timetabledate .otherday{
+	padding:7px 16px 0 0;
+	font-size:1.8em;
+	font-family: "Cabin", sans-serif;
+	font-weight:bold;
+	float:right;
+}
+#timetabledate .otherday a{
+	color:#1B3235;
+	border-bottom:2px solid #1B3235;
+}
+
+.hourblock{
+	border-bottom:1px solid #000;
+	padding-bottom:1px;
+	margin-bottom:1px;
+	clear:both;
+	display:-moz-box;
+	display:-webkit-box;
+	display:-o-box;
+	display:-ms-box;
+	-moz-box-align:stretch;
+	-webkit-box-align:stretch;
+	-o-box-align:stretch;
+	-ms-box-align:stretch;
+}
+
+.hourblock.haveevent{
+}
+
+.hourblock .hour{
+	background-color:#1E3111;
+	width:79px;
+	_height:50px;
+	min-height:50px;
+	border-radius: 6px;
+	color:#fff;
+	font-family:"Cabin", sans-serif;
+	font-weight:bold;
+	text-align:center;
+	padding-top:10px;
+	font-size:1.6em;
+}
+
+.hourblock.haveevent .hour{
+	background-color:#7AC243;
+	margin-right:33px;
+}
+
+.hourblock .timecontents{
+}
+
+.hourblock .timecontents p{
+	font-size:2.1em;
+	padding:0;
+	text-indent:0;
+}
+
+.hourblock .timecontents .lt{
+	border-bottom: 1px solid #000;
+	padding:10px 0;
+}
+
+.hourblock .timecontents .lt.last{
+	border-bottom:none;
+}
+.hourblock .timecontents .lt .talker{
+	font-size:2.1em;
+}
+
+.hourblock .timecontents .lt .talker a{
+	color:#000;
+	padding-right: 30px;
+}
+
+.hourblock .timecontents .lt .talker a.twittericon{
+	background: url("../images/twittericon.png") no-repeat right center;
+}
+
+.hourblock .timecontents .lt .talker a.homeicon{
+	background: url("../images/homeicon.png") no-repeat right center;
+}
+
+.hourblock .timecontents .lt .lttitle{
+	font-size:1.6em;
+}
+
+
+
