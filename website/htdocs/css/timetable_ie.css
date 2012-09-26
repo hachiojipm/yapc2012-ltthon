@@ -1,0 +1,34 @@
+.hourline{
+	overflow:hidden;
+	_height:60px;
+}
+
+.hourline.haveevent{
+	_height:570px;
+}
+
+.hourline .hour{
+	float:left;
+	_height:50px;
+
+}
+
+.hourline.haveevent .hour{
+	height:420px;
+	_height:560px;
+}
+
+.hourline .timecontents{
+	_float:right;
+}
+
+.hourline .timecontents p{
+	/padding-left:0;
+	_width:800px;
+}
+
+.hourline.haveevent .timecontents{
+	padding-left:112px;
+	/padding-left:0;
+	_width:830px;
+}

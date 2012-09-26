@@ -5,11 +5,16 @@
 		<title>タイムテーブル｜YAPC::ASIA 2012 LT-THON</title>
 		<link media="all" rel="stylesheet" href="css/base.css" type="text/css" />
 		<link media="all" rel="stylesheet" href="css/timetable.css" type="text/css" />
-		<!--[if lt iE 9]>
+		<link media="all" rel="stylesheet" href="css/slide.css" type="text/css" />
+		<!--[if lt IE 9]>
 		<script src="js/html5shiv.js" type="text/javascript"></script>
+		<![endif]-->
+		<!--[if IE]>
+		<link media="all" rel="stylesheet" href="css/timetable_ie.css" type="text/css" />
 		<![endif]-->
 		<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
 		<script src="js/base.js" type="text/javascript"></script>
+		<script src="js/slide.js" type="text/javascript"></script>
 		<script src="js/pop.js" type="text/javascript"></script>
 <meta name="keywords" content="Perl,カンファレンス,YAPC,LT,ライトニングトーク,技術者,勉強,交流,Ruby,PHP,Python,エンジニア,WEB" />
 <meta name="description" content="タイムテーブル - LTソン in YAPC::ASIA 2012" />
@@ -47,202 +52,237 @@
 		</header>
 		<div id="messagebanner"><a href="http://hachiojipm.org/?p=365"><img src="./images/message_banner.jpg" alt="" /></a></div>
 		<article>
-			<section>
-				<h1><img src="./images/timetable_h1.png" alt="" /></h1>
-				<div id="sublogo"><img src="./images/sublogo.png" alt="" /></div>
-				<h2>タイムテーブル</h2>
-				<div id="timetabledate">
+		<h1><img src="./images/timetable_h1.png" alt="" /></h1>
+		<div id="sublogo"><img src="./images/sublogo.png" alt="" /></div>
+		<h2>タイムテーブル</h2>
+		<div class="attention">
+			<p>※随時飛び込みも受け付けます、LTソンスタッフにお声がけください！</p>
+			<p>※参加者の皆様は、5分位前までには会場にお越しください！</p>
+		</div>
+
+		<div class="slidebox">
+			<div class="slidetext">
+				<section class="leftside">
+				<div class="timetabledate">
 					<h3>28day - Fri</h3>
-					<div class="otherday"><a href="timetable2.html">29day - Sat &gt;&gt;</a></div>
+					<div class="otherday torightside">29day - Sat &gt;&gt;</div>
 				</div>
-				<div class="hourblock">
+				<div class="hourline">
 					<div class="hour">10:00</div>
 					<div class="timecontents"></div>
 				</div>
-				<div class="hourblock haveevent">
+				<div class="hourline haveevent">
 					<div class="hour">11:00</div>
 					<div class="timecontents">
 						<div class="lt">
-							<div class="talker"><a href="#" class="twittericon">しんぺい@猫型技研さん</a></div>
+							<div class="talker"><a href="https://twitter.com/neko_gata_s" class="twittericon">しんぺい@猫型技研さん</a></div>
 							<div class="lttitle">小さなプログラムによる実験音楽」または「Acme::Nyandoku でソースコードをにゃん読化しよう</div>
 						</div>
 						<div class="lt">
-							<div class="talker"><a href="#" class="twittericon">Daniel Nakanoさん</a></div>
+							<div class="talker"><a href="https://twitter.com/Daniel_Nakano" class="twittericon">Daniel Nakanoさん</a></div>
 							<div class="lttitle">飲食店でがっつり働く（社員）僕から　飲食店がいかにアナログが。それをどのように変えようとしているか。賛同者求む！</div>
 						</div>
 						<div class="lt">
-							<div class="talker">もさん</div>
-							<div class="lttitle">CpanにXML::RSSがあったのでRSSアプリ作ってみたんだ。javaScriptに移行したらPhoneGapなるものに出会ったんだ。PhoneGapよろしくというお話です。</div>
-						</div>
-						<div class="lt">
-							<div class="talker"><a href="#" class="twittericon">hayajoさん</a></div>
+							<div class="talker"><a href="https://twitter.com/hayajo" class="twittericon">hayajoさん</a></div>
 							<div class="lttitle">Perlでプチコン</div>
 						</div>
 						<div class="lt last">
-							<div class="talker"><a href="#" class="twittericon">M_Ishikawaさん</a></div>
+							<div class="talker"><a href="https://twitter.com/M_Ishikawa" class="twittericon">M_Ishikawaさん</a></div>
 							<div class="lttitle">おせっかい駆動開発のススメ</div>
 						</div>
 					</div>
 				</div>
-				<div class="hourblock">
+				<div class="hourline">
 					<div class="hour">12:00</div>
 					<div class="timecontents">
 						<p>おひるごはん</p>
 					</div>
 				</div>
-				<div class="hourblock haveevent">
+				<div class="hourline haveevent">
 					<div class="hour">13:00</div>
 					<div class="timecontents">
 						<div class="lt">
-							<div class="talker"><a href="#" class="twittericon">ichigotakeさん </a></div>
+							<div class="talker"><a href="https://twitter.com/ichigotake" class="twittericon">ichigotakeさん </a></div>
 							<div class="lttitle">ちびっことPerl</div>
 						</div>
 						<div class="lt">
-							<div class="talker"><a href="#" class="homeicon">@dokechinさん</a></div>
+							<div class="talker"><a href="http://stingyrunner.blog.fc2.com/" class="homeicon">@dokechinさん</a></div>
 							<div class="lttitle">No Title</div>
 						</div>
 						<div class="lt">
-							<div class="talker"><a href="#" class="twittericon">papixさん</a></div>
+							<div class="talker"><a href="https://twitter.com/__papix__" class="twittericon">papixさん</a></div>
 							<div class="lttitle">Perlで(をネタに)旅をしてみた｣的なお話</div>
 						</div>
 						<div class="lt">
-							<div class="talker"><a href="#" class="homeicon">Spring_MTさん</a></div>
+							<div class="talker"><a href="http://spring-mt.tumblr.com/" class="homeicon">Spring_MTさん</a></div>
 							<div class="lttitle">YAPCをきっかけで福岡に行ってみた</div>
 						</div>
 						<div class="lt last">
-							<div class="talker"><a href="#" class="homeicon">turuginaさん</a></div>
+							<div class="talker"><a href="http://floralcompany.jp/" class="homeicon">turuginaさん</a></div>
 							<div class="lttitle">プライベートで使用している「画像ダウンロード」スクリプトの開発を通じて勉強したことについて</div>
 						</div>
 					</div>
 				</div>
-				<div class="hourblock">
+				<div class="hourline">
 					<div class="hour">14:00</div>
 					<div class="timecontents"></div>
 				</div>
-				<div class="hourblock">
+				<div class="hourline">
 					<div class="hour">15:00</div>
 					<div class="timecontents"></div>
 				</div>
-				<div class="hourblock haveevent">
+				<div class="hourline haveevent">
 					<div class="hour">15:30</div>
 					<div class="timecontents">
 						<div class="lt">
-							<div class="talker"><a href="#" class="twittericon">ytnobodyさん</a></div>
+							<div class="talker"><a href="http://ytnobody.net/" class="homeicon">ytnobodyさん</a></div>
 							<div class="lttitle">No Title</div>
 						</div>
 						<div class="lt">
-							<div class="talker"><a href="#" class="twittericon">equinox79さん</a></div>
+							<div class="talker"><a href="http://equinox79.hateblo.jp/" class="homeicon">equinox79さん</a></div>
 							<div class="lttitle">位置情報専用の短縮(?)URLサービスをperlで作った</div>
 						</div>
 						<div class="lt">
-							<div class="talker"><a href="#" class="twittericon">techno_nekoさん</a></div>
+							<div class="talker"><a href="https://twitter.com/techno_neko" class="twittericon">techno_nekoさん</a></div>
 							<div class="lttitle">No Title</div>
 						</div>
 						<div class="lt">
-							<div class="talker"><a href="#" class="twittericon">dameninngennさん</a></div>
+							<div class="talker"><a href="https://twitter.com/dameninngenn" class="twittericon">dameninngennさん</a></div>
 							<div class="lttitle">No Title</div>
 						</div>
 						<div class="lt last">
-							<div class="talker"><a href="#" class="twittericon">こしばとしあき＠東京Ruby会議10さん</a></div>
+							<div class="talker"><a href="http://tokyo10.rubykaigi.info/" class="homeicon">こしばとしあき＠東京Ruby会議10さん</a></div>
 							<div class="lttitle">発表募集に応募するコツと、カンファレンスでLTする効果の実例について</div>
 						</div>
 					</div>
 				</div>
-				<div class="hourblock">
+				<div class="hourline">
 					<div class="hour">16:00</div>
 					<div class="timecontents"></div>
 				</div>
-				<p>(追って綺麗な体裁に修正させて頂きます)</p><br />
-<div style="font-size:18px;font-weight:bold;color:red">
-※随時飛び込みも受け付けます、LTソンスタッフにお声がけください！
-</div><br>
-<div style="font-size:18px;font-weight:bold;color:red">
-※参加者の皆様は、5分位前までには会場にお越しください！
-</div><br>
+				<p class="torightside">29day - Sat &gt;&gt;</p>
+				</section>
+				<section class="rightside">
+				<div class="timetabledate">
+					<div class="otherday toleftside">&lt; &lt; 28day - Fri</div>
+					<h3>29day - Sat</h3>
+				</div>
+				<div class="hourline">
+					<div class="hour">10:00</div>
+					<div class="timecontents"></div>
+				</div>
+				<div class="hourline haveevent">
+					<div class="hour">10:30</div>
+					<div class="timecontents">
+						<div class="lt">
+							<div class="talker"><a href="http://kudakurage.com" class="homeicon">Kazuyukiさん</a></div>
+							<div class="lttitle">No Title</div>
+						</div>
+						<div class="lt">
+							<div class="talker"><a href="http://twitter.com/aokcub/" class="twittericon">aokcubさん</a></div>
+							<div class="lttitle">Perlと回路(仮)</div>
+						</div>
+						<div class="lt">
+							<div class="talker"><a href="http://stmind.hatenablog.com/" class="homeicon">satojkovicさん</a></div>
+							<div class="lttitle">僕が考えた最小のbash completion for perl</div>
+						</div>
+						<div class="lt last">
+							<div class="talker"><a href="https://twitter.com/saisa6153" class="twittericon">たんないゆうきさん</a></div>
+							<div class="lttitle">献血とPerlについて</div>
+						</div>
+					</div>
+				</div>
+				<div class="hourline">
+					<div class="hour">11:00</div>
+					<div class="timecontents"></div>
+				</div>
+				<div class="hourline">
+					<div class="hour">12:00</div>
+					<div class="timecontents">
+						<p>おひるごはん</p>
+					</div>
+				</div>
+				<div class="hourline">
+					<div class="hour">13:00</div>
+					<div class="timecontents">
+						<p><a href="./meetpm.html">地域pm、勉強会、交流会 ミートアップ</a></p>
+					</div>
+				</div>
+				<div class="hourline haveevent">
+					<div class="hour">14:10</div>
+					<div class="timecontents">
+						<div class="lt">
+							<div class="talker"><a href="http://d.hatena.ne.jp/gfx/" class="homeicon">gfxさん</a></div>
+							<div class="lttitle">JSXを支えるPerlの技術</div>
+						</div>
+						<div class="lt">
+							<div class="talker"><a href="https://twitter.com/moznion" class="twittericon">moznionさん</a></div>
+							<div class="lttitle">1) Perl でCUDA を触ってみよう (まさかのPerl でGPGPU をブン回す話)<br />2) 素晴らしきかなP 言語 (Pascal の話します)<br />3) Perl でWhitespaceを実装してみた</div>
+						</div>
+						<div class="lt">
+							<div class="talker"><a href="https://twitter.com/murave" class="twittericon">muraveさん</a></div>
+							<div class="lttitle">No Title</div>
+						</div>
+						<div class="lt">
+							<div class="talker"><a href="https://twitter.com/issm" class="twittericon">issmさん</a></div>
+							<div class="lttitle">Textile記法とかMarkdown記法とかあたりで何か</div>
+						</div>
+						<div class="lt">
+							<div class="talker"><a href="https://twitter.com/shitsyndrome" class="twittericon">kubo39さん</a></div>
+							<div class="lttitle">たぶんwebkitとかD言語とかhtml5とか並列・平行プログラミングとか</div>
+						</div>
+						<div class="lt last">
+							<div class="talker"><a href="http://twitter.com/#!/minemaz" class="twittericon">minemazさん</a></div>
+							<div class="lttitle">できる！　エクセル方眼！</div>
+						</div>
+					</div>
+				</div>
+				<div class="hourline haveevent">
+					<div class="hour">15:00</div>
+					<div class="timecontents">
+						<div class="lt">
+							<div class="talker"><a href="http://kudakurage.com" class="homeicon">Motoyamaさん</a></div>
+							<div class="lttitle">便利なフォント</div>
+						</div>
+						<div class="lt">
+							<div class="talker"><a href="https://twitter.com/memememomo" class="twittericon">ウチコさん</a></div>
+							<div class="lttitle">No Title</div>
+						</div>
+						<div class="lt">
+							<div class="talker"><a href="https://twitter.com/mgiken" class="twittericon">松村竜次さん</a></div>
+							<div class="lttitle">カスタムタグで高速開発(ArcとBootstrapでもにょもにょ)</div>
+						</div>
+						<div class="lt">
+							<div class="talker"><a href="https://twitter.com/DQNEO" class="twittericon">DQNEOさん</a></div>
+							<div class="lttitle">桐島、ファイルに保存するのやめるってよ</div>
+						</div>
+						<div class="lt">
+							<div class="talker"><a href="https://twitter.com/yukarigohandayo" class="twittericon">yukarinさん</a></div>
+							<div class="lttitle">チームのみんなと一緒に開発しているサービスについて話します！ちなみに私は女子です♪</div>
+						</div>
+						<div class="lt">
+							<div class="talker"><a href="https://twitter.com/ainame" class="twittericon">ainameさん</a></div>
+							<div class="lttitle">Test::MockObjectについて</div>
+						</div>
+						<div class="lt last">
+							<div class="talker"><a href="https://twitter.com/kaz_hiramatsu" class="twittericon">kaz_hiramatsuさん</a></div>
+							<div class="lttitle">自作Webアプリケーションフレームワークについて（予定）</div>
+						</div>
+					</div>
+				</div>
+				<div class="hourline">
+					<div class="hour">16:00</div>
+					<div class="timecontents"></div>
+				</div>
+				<p class="toleftside">&lt; &lt; 28day - Fri</p>
+				</section>
 
-				<div style="font-size:18px;">
-				●28日午前（11:00〜<br>
-しんぺい@猫型技研さん<br>
-「小さなプログラムによる実験音楽」または「Acme::Nyandoku でソースコードをにゃん読化しよう」<br><br>
-Daniel Nakanoさん<br>
-　「飲食店でがっつり働く（社員）僕から　飲食店がいかにアナログが。それをどのように変えようとしているか。賛同者求む！」<br><br>
-<!--もさん<br>
-　「CpanにXML::RSSがあったのでRSSアプリ作ってみたんだ。javaScriptに移行したらPhoneGapなるものに出会ったんだ。PhoneGapよろしくというお話です。」<br><br>-->
-hayajoさん<br>
-　「Perlでプチコン」<br><br>
-M_Ishikawaさん<br>
-　「おせっかい駆動開発のススメ」<br><br>
-<br>
-●28日昼過ぎ(13:00〜<br>
-ichigotakeさん <br>
-　「ちびっことPerl」<br><br>
-@dokechinさん<br><br>
-papixさん<br>
-　「Perlで(をネタに)旅をしてみた｣的なお話」<br><br>
-Spring_MTさん<br>
-　「YAPCをきっかけで福岡に行ってみた」<br><br>
-turuginaさん<br>
-　「プライベートで使用している「画像ダウンロード」スクリプトの開発を通じて勉強したことについて」<br><br>
-<br>
-●28日午後（15:30〜<br>
-ytnobodyさん<br><br>
-equinox79さん<br>
-　「位置情報専用の短縮(?)URLサービスをperlで作った」<br><br>
-techno_nekoさん<br><br>
-dameninngennさん<br><br>
-こしばとしあき＠東京Ruby会議10さん<br>
-　「発表募集に応募するコツと、カンファレンスでLTする効果の実例について」<br>
-<br>
-<br>
-●29日午前(10:30〜<br>
-Kazuyukiさん<br><br>
-aokcubさん<br>
-　「Perlと回路(仮)」<br><br>
-satojkovicさん<br>
-「僕が考えた最小のbash completion for perl」<br><br>
-たんないゆうきさん<br>
-　「献血とPerlについて」<br><br>
-<br>
-●29日昼過ぎ(13:00〜<br>
-<a href="meetpm.html">「地域pm、勉強会、交流会 ミートアップ」</a>
-<br>
-<br>
-●29日午後１(14:10〜<br>
-gfxさん<br>
-「JSXを支えるPerlの技術」<br><br>
-moznionさん<br>
-　「1) Perl でCUDA を触ってみよう (まさかのPerl でGPGPU をブン回す話)
-2) 素晴らしきかなP 言語 (Pascal の話します)
-3) Perl でWhitespaceを実装してみた」<br><br>
-muraveさん<br><br>
-issmさん<br>
-　「Textile記法とかMarkdown記法とかあたりで何か」<br><br>
-kubo39さん<br>
-　「たぶんwebkitとかD言語とかhtml5とか並列・平行プログラミングとか」<br><br>
-minemazさん<br>
-　「できる！　エクセル方眼！」<br><br>
-<br>
-●29日午後２(15:00〜<br>
-Motoyamaさん<br>
-　「便利なフォント」<br><br>
-ウチコさん<br><br>
-松村竜次さん<br>
-　「カスタムタグで高速開発(ArcとBootstrapでもにょもにょ)」<br><br>
-DQNEOさん<br>
-　「桐島、ファイルに保存するのやめるってよ」<br><br>
-yukarinさん<br>
-　「チームのみんなと一緒に開発しているサービスについて話します！ちなみに私は女子です♪」<br><br>
-ainameさん<br>
-　「Test::MockObjectについて」<br><br>
-kaz_hiramatsuさん<br>
-　「自作Webアプリケーションフレームワークについて（予定）」<br><br>
-<br>
-<br />
-<br />
-※もしこのスケジュールに問題を見つけた方や、応募したのに自分のお名前が記載されていない方は、お手数ですが <a href="http://twitter.com/ltthon">http://twitter.com/ltthon</a> まで御連絡いただければ幸いです。
+			</div>
+		</div>
 
-</div>
-			</section>
+
+		<div class="errorreport">※もしこのスケジュールに問題を見つけた方や、応募したのに自分のお名前が記載されていない方は、お手数ですが <a href="http://twitter.com/ltthon">http://twitter.com/ltthon</a> まで御連絡いただければ幸いです。</div>
+
                         <div class="likebuttons">
                                 <a href="http://b.hatena.ne.jp/entry/http://ltthon-yapc2012.hachiojipm.org/" class="hatena-bookmark-button" data-hatena-bookmark-title="LTソン in YAPC::ASIA 2012" dathatena-bookmark-layout="standard" title="このエントリーをはてなブックマークに追加"><img src="http://b.st-hatena.com/images/entry-button/button-only.gif" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="http://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
 <iframe src="//www.facebook.com/plugins/like.php?href=http%3A%2F%2Fltthon-yapc2012.hachiojipm.org%2F&amp;send=false&amp;layout=button_count&amp;width=450&amp;show_faces=false&amp;action=like&amp;color
